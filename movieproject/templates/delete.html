@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+</head>
+<body>
+<form method="post">
+  {% extends 'base.html' %}
+{% block body %}
+  {% csrf_token %}
+  Are you sure?
+  <input type="submit">
+  {% endblock %}
+</form>
+</body>
+</html>
